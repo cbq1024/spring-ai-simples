@@ -1,5 +1,7 @@
 # V0.0.1 <Badge type="tip" text="^0.0.1" />
 
+- Spring AI 概述
+- Spring AI quickstart
 - 项目框架完成
 - 通过 github workflow 自行搭建部署
 - 完善项目框架结构
