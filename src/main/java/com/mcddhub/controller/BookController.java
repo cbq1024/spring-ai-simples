@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/books")
 public class BookController {
+
     private final ChatClient chatClient;
 
     public BookController(ChatClient.Builder builder) {
@@ -21,9 +22,8 @@ public class BookController {
     @GetMapping
     public List<BookRecommendation> list() {
         return chatClient.prompt()
-                .user("Generate 10 book recommendation for a book on AI and coding. Please limit the summary to 100 words.")
-                .call()
-                .entity(new ParameterizedTypeReference<>() {
-                });
+            .user("Generate 10 book recommendation for a book on AI and coding. Please limit the summary to 100 words.")
+            .call()
+            .entity(new ParameterizedTypeReference<>() {});
     }
 }
