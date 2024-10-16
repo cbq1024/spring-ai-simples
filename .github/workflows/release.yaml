@@ -1,4 +1,4 @@
-name: CI|CD Release Drafter
+name: CI|CD Release
 
 on:
   push:

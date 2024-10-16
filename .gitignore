@@ -32,3 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 /.env
+
+### VitePress Site ###
+node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
